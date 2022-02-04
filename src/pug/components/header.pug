@@ -1,0 +1,33 @@
+block header_vars 
+  - var logo = { link: '#', name: 'logo' };
+
+  - var nav = [ { link: '#home', name: 'home' }, { link: '#contacts', name: 'contacts' }, { link: '#profile', name: 'profile' }, ];
+
+  - var has_burger = true;
+  if has_burger 
+    - var burger_mobile = true;
+
+
+header.header 
+  .container.header__container 
+    a.header__logo(href=logo.link) #{logo.name}
+
+    if has_burger
+      if burger_mobile 
+        nav.header__nav
+          ul.header__list 
+            each item in nav
+              li.header__item
+                a(href=item.link) #{item.name}
+
+      button.header__burger
+        span 
+        span 
+        span
+
+    else
+      nav.header__nav
+        ul.header__list 
+          each item in nav
+            li.header__item
+              a(href=item.link) #{item.name}

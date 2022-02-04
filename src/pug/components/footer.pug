@@ -1,0 +1,26 @@
+block footer_vars 
+  - var logo = { link: '#', name: 'logo' };
+
+  - var has_social = false;
+  - var socials = [ { link: 'https://vk.com/', id: 'vk' }, { link: 'https://www.facebook.com/', id: 'fb' }, { link: 'https://www.instagram.com/', id: 'inst' } ];
+  - var nav = [ { link: '#home', name: 'home' }, { link: '#contacts', name: 'contacts' }, { link: '#profile', name: 'profile' }, ];
+
+
+footer.footer 
+  .container.footer__container 
+    a.footer__logo(href=logo.link) #{logo.name}
+
+    if has_social
+      nav.footer__nav
+        ul.footer__list 
+          each social in socials
+            li.footer__item 
+              a(href=social.link)
+                +svg(social.id)
+    else
+      nav.footer__nav
+        ul.footer__list 
+          each item in nav
+            li.footer__item 
+              a(href=item.link) #{item.name}
+    

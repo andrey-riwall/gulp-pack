@@ -1,0 +1,51 @@
+// MAIN COLORS
+$main_color: #fff;
+$text_color: #fff;
+$bg_color: #222;
+
+// CONTAINER
+$container_width: 1600px;
+$container_paddint-top: 0;
+$container_paddint-right: 15px;
+
+
+// HEADER
+$header_height: 120px;
+$header_bg: transparent;
+$header_border: true;
+$header_border-height: 1px;
+$header_border-color: $text_color;
+$header_border-opacity: .5;
+
+$header_logo-fw: 700;
+$header_logo-fz: 50px;
+$header_logo-color: $text_color;
+
+$header_item-fw: 700;
+$header_item-fz: 30px;
+$header_item-color: $text_color;
+
+$header_list-gap: 30px;
+
+
+// 
+
+
+
+// FOOTER
+$footer_height: 120px;
+$footer_bg: transparent;
+$footer_border: true;
+$footer_border-height: 1px;
+$footer_border-color: $text_color;
+$footer_border-opacity: .5;
+
+$footer_logo-fw: 700;
+$footer_logo-fz: 50px;
+$footer_logo-color: $text_color;
+
+$footer_item-fw: 700;
+$footer_item-fz: 30px;
+$footer_item-color: $text_color;
+
+$footer_list-gap: 30px;
